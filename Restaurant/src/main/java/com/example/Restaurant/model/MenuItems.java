@@ -1,8 +1,10 @@
 package com.example.Restaurant.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.stereotype.Component;
 
 @Document(collection = "menu")
+@Component
 public class MenuItems {
     @id
     private int id;

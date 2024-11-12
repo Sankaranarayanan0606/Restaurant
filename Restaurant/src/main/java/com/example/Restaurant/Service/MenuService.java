@@ -1,5 +1,5 @@
 package com.example.Restaurant.Service;
-
+import org.springframework.stereotype.Component;
 import com.example.Restaurant.Repositry.MenuRepository;
 import com.example.Restaurant.model.MenuItems;
 import org.springframework.beans.factory.annotation.Autowired;
