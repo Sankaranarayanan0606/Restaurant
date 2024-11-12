@@ -4,6 +4,8 @@ import com.example.Restaurant.Repositry.MenuRepository;
 import com.example.Restaurant.model.MenuItems;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 public class MenuService {
     @Autowired
     MenuRepository menuRepository;
@@ -22,5 +24,9 @@ public class MenuService {
 
     public void deleteMenuItem(int id) {
         menuRepository.deleteById(id);
+    }
+
+    public List<MenuItems> getAllMenuItems() {
+        return menuRepository.findAll();
     }
 }
