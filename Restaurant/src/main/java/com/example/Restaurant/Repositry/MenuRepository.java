@@ -1,4 +1,7 @@
 package com.example.Restaurant.Repositry;
 
-public interface MenuRepository {
+import com.example.Restaurant.model.MenuItems;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface MenuRepository extends MongoRepository<MenuItems, String> {
 }
