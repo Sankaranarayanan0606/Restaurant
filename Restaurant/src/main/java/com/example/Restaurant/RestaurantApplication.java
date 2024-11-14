@@ -47,7 +47,6 @@ public class RestaurantApplication {
 
 }
 
-//
 @Component
 class RestaurantAppRunner implements CommandLineRunner {
 
@@ -67,5 +66,11 @@ class RestaurantAppRunner implements CommandLineRunner {
 //			System.out.print( + ",");
 //			System.out.print(+"\n");
 		}
+	}
+
+
+	public void updater(String... args){
+
+
 	}
 }

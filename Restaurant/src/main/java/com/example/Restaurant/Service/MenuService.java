@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class MenuService {
     @Autowired
@@ -27,8 +29,11 @@ public class MenuService {
         menuRepository.deleteById(id);
     }
 
-    public List<MenuItems> getAllMenuItems() {    //Success
+    public Optional<MenuItems> getRestaurantById(String id) {
+        return menuRepository.findById(id);
+    }
 
+    public List<MenuItems> getAllMenuItems() {    //Success
         return menuRepository.findAll();
     }
 }
