@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Document(collection = "Food")
 @TypeAlias("Food")
+@Component
 public class MenuItems {
     @Id
     private String id;
